@@ -29,10 +29,62 @@ class Home extends StatelessWidget {
         title: const Text("DESIGN PATTERN"),
         centerTitle: true,
       ),
-      body: const Center(
-        child: Icon(Icons.agriculture_outlined,
-         size: 100,
-         color: Colors.red),
+      body: SingleChildScrollView(
+        child: Column(
+          // mainAxisSize: MainAxisSize.min,
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Container(
+              height: 100,
+              width: 100,
+              color: Colors.red,
+              margin: const EdgeInsets.all(10),
+            ),
+            Container(
+              height: 50,
+              width: 50,
+              color: Colors.red,
+              margin: const EdgeInsets.all(10),
+            ),
+            Container(
+              height: 50,
+              width: 50,
+              color: Colors.red,
+              margin: const EdgeInsets.all(10),
+            ),
+            Container(
+              height: 100,
+              width: 100,
+              color: Colors.red,
+              margin: const EdgeInsets.all(10),
+            ),
+            Container(
+              height: 100,
+              width: 100,
+              color: Colors.red,
+              margin: const EdgeInsets.all(10),
+            ),
+            Container(
+              height: 50,
+              width: 50,
+              color: Colors.red,
+              margin: const EdgeInsets.all(10),
+            ),
+            Container(
+              height: 50,
+              width: 50,
+              color: Colors.red,
+              margin: const EdgeInsets.all(10),
+            ),
+            Container(
+              height: 100,
+              width: 100,
+              color: Colors.red,
+              margin: const EdgeInsets.all(10),
+            ),
+          ]
+        ),
       ),
     );
   }
