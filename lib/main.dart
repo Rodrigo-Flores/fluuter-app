@@ -29,9 +29,11 @@ class Home extends StatelessWidget {
         title: const Text("DESIGN PATTERN"),
         centerTitle: true,
       ),
-      body: const Icon(Icons.agriculture_outlined,
-       size: 100,
-       color: Colors.red),
+      body: const Center(
+        child: Icon(Icons.agriculture_outlined,
+         size: 100,
+         color: Colors.red),
+      ),
     );
   }
 }
