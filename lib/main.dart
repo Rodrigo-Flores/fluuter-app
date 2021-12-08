@@ -26,12 +26,12 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Nao's App"),
+        title: const Text("DESIGN PATTERN"),
         centerTitle: true,
       ),
-      body: TextButton( // Exists a many widgets that can be used as a button
-        child: const Text("HELLO BUTTON"),
-        onPressed: () {},
+      body: Container(
+        child: Image.network("https://www.octaaerospace.com/wp-content/uploads/2021/08/Majestic_Chile-scaled.jpg",
+            color: Colors.black.withOpacity(0.5), colorBlendMode: BlendMode.darken, fit: BoxFit.cover),
       ),
     );
   }
