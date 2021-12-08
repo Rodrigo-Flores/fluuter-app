@@ -29,21 +29,10 @@ class Home extends StatelessWidget {
         title: const Text("Nao's App"),
         centerTitle: true,
       ),
-      body: Container(
-        color: Colors.lime,
-        width: double.infinity,
-        padding: const EdgeInsets.all(20.0),
-        margin: const EdgeInsets.all(20.0),
-        child: const Text(
-          'Welcome to the Jungle',
-          style: TextStyle(
-            fontSize: 15.0,
-            color: Colors.black,
-            fontWeight: FontWeight.bold),
-          textAlign: TextAlign.center,
-          overflow: TextOverflow.ellipsis,
-        ),
-      )
+      body: TextButton( // Exists a many widgets that can be used as a button
+        child: const Text("HELLO BUTTON"),
+        onPressed: () {},
+      ),
     );
   }
 }
