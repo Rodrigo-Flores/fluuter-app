@@ -29,10 +29,9 @@ class Home extends StatelessWidget {
         title: const Text("DESIGN PATTERN"),
         centerTitle: true,
       ),
-      body: Container(
-        child: Image.network("https://www.octaaerospace.com/wp-content/uploads/2021/08/Majestic_Chile-scaled.jpg",
-            color: Colors.black.withOpacity(0.5), colorBlendMode: BlendMode.darken, fit: BoxFit.cover),
-      ),
+      body: const Icon(Icons.agriculture_outlined,
+       size: 100,
+       color: Colors.red),
     );
   }
 }
