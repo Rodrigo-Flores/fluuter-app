@@ -30,8 +30,9 @@ class Home extends StatelessWidget {
         centerTitle: true,
       ),
       body: SingleChildScrollView(
-        child: Column(
-          // mainAxisSize: MainAxisSize.min,
+        scrollDirection: Axis.horizontal,
+        child: Row(
+          mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
@@ -60,12 +61,6 @@ class Home extends StatelessWidget {
               margin: const EdgeInsets.all(10),
             ),
             Container(
-              height: 100,
-              width: 100,
-              color: Colors.red,
-              margin: const EdgeInsets.all(10),
-            ),
-            Container(
               height: 50,
               width: 50,
               color: Colors.red,
@@ -80,6 +75,18 @@ class Home extends StatelessWidget {
             Container(
               height: 100,
               width: 100,
+              color: Colors.red,
+              margin: const EdgeInsets.all(10),
+            ),
+            Container(
+              height: 50,
+              width: 50,
+              color: Colors.red,
+              margin: const EdgeInsets.all(10),
+            ),
+            Container(
+              height: 50,
+              width: 50,
               color: Colors.red,
               margin: const EdgeInsets.all(10),
             ),
