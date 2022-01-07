@@ -29,42 +29,24 @@ class Home extends StatelessWidget {
         title: const Text("DESIGN PATTERN"),
         centerTitle: true,
       ),
-      body: ListView(
-        children: const [
-          Text("Hello", style: TextStyle(fontSize: 30)),
-          Text("Hello", style: TextStyle(fontSize: 30)),
-          Text("Hello", style: TextStyle(fontSize: 30)),
-          Text("Hello", style: TextStyle(fontSize: 30)),
-          Text("Hello", style: TextStyle(fontSize: 30)),
-          Text("Hello", style: TextStyle(fontSize: 30)),
-          Text("Hello", style: TextStyle(fontSize: 30)),
-          Text("Hello", style: TextStyle(fontSize: 30)),
-          Text("Hello", style: TextStyle(fontSize: 30)),
-          Text("Hello", style: TextStyle(fontSize: 30)),
-          Text("Hello", style: TextStyle(fontSize: 30)),
-          Text("Hello", style: TextStyle(fontSize: 30)),
-          Text("Hello", style: TextStyle(fontSize: 30)),
-          Text("Hello", style: TextStyle(fontSize: 30)),
-          Text("Hello", style: TextStyle(fontSize: 30)),
-          Text("Hello", style: TextStyle(fontSize: 30)),
-          Text("Hello", style: TextStyle(fontSize: 30)),
-          Text("Hello", style: TextStyle(fontSize: 30)),
-          Text("Hello", style: TextStyle(fontSize: 30)),
-          Text("Hello", style: TextStyle(fontSize: 30)),
-          Text("Hello", style: TextStyle(fontSize: 30)),
-          Text("Hello", style: TextStyle(fontSize: 30)),
-          Text("Hello", style: TextStyle(fontSize: 30)),
-          Text("Hello", style: TextStyle(fontSize: 30)),
-          Text("Hello", style: TextStyle(fontSize: 30)),
-          Text("Hello", style: TextStyle(fontSize: 30)),
-          Text("Hello", style: TextStyle(fontSize: 30)),
-          Text("Hello", style: TextStyle(fontSize: 30)),
-          Text("Hello", style: TextStyle(fontSize: 30)),
-          Text("Hello", style: TextStyle(fontSize: 30)),
-          Text("Hello", style: TextStyle(fontSize: 30)),
-          Text("Hello", style: TextStyle(fontSize: 30)),
+      body: Column(
+        children: [
+          // ignore: sized_box_for_whitespace
+          Expanded(
+            child: ListView(
+              children: const [
+                Text("My Page"),
+                Text("Content"),
+              ],
+            ),
+          ),
+          Container(
+            height: 100,
+            color: Colors.red,
+            child: const Center(child: Text("Next Page")),
+          ),
         ],
-      ),
+      )
     );
   }
 }
